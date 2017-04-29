@@ -21,6 +21,11 @@ fi
 
 echo Running full media_build for kernel sources at ${1}
 
+if [ -n ${VER} ] ; then
+   # generate first ./v4l/.version, which is used by all other scripts
+   make VER=${VER} release
+fi
+
 cd linux
 make tar DIR=../${1}
 make untar
@@ -36,4 +41,4 @@ disable_opt CONFIG_DVB_AF9033
 disable_opt CONFIG_VIDEO_ET8EK8
 set_opt_value CONFIG_DVB_MAX_ADAPTERS 32
 
-make -j3
+make -j3 
