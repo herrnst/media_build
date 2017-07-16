@@ -609,8 +609,8 @@ index 6777926f20f2..74358ade87f2 100644
  #include <linux/pci.h>
 diff --git a/drivers/media/pci/ddbridge/ddbridge-core.c b/drivers/media/pci/ddbridge/ddbridge-core.c
 index 32f4d3746c8e..660898d16268 100644
---- a/drivers/media/pci/ddbridge/ddbridge-core.c
-+++ b/drivers/media/pci/ddbridge/ddbridge-core.c
+--- a/drivers/media/pci/ddbridge/ddbridge-main.c
++++ b/drivers/media/pci/ddbridge/ddbridge-main.c
 @@ -17,6 +17,7 @@
   * http://www.gnu.org/copyleft/gpl.html
   */
